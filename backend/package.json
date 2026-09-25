@@ -2,9 +2,9 @@
   "name": "projeto_filmes3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "node --watch index.js"
+    "dev": "node --watch server.js"
   },
   "keywords": [],
   "author": "",

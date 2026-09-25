@@ -66,7 +66,7 @@ app.put("/update-movie/:id", (request, response) => {
                 return
             }
 
-            response.status(200).json({
+            response.json({
                 message: "Filme atualizado com sucesso!"
             })
         })
