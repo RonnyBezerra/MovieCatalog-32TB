@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Filme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cadastro">
+    <header class="topbar">
+        <a href="index.html" class="brand-link">
+            <div class="brand-block">
+                <div class="brand">Cine Hall</div>
+                <div class="brand-sub">R &amp; R</div>
+            </div>
+        </a>
+    </header>
+
+    <main class="page">
+        <form class="formulario" id="cadastroForm">
+            <h2>Cadastrar novo filme</h2>
+
+            <div class="campo">
+                <label for="title">Título</label>
+                <input id="title" name="title" type="text" required>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="genre">Gênero</label>
+                    <input id="genre" name="genre" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="year">Ano</label>
+                    <input id="year" name="year" type="number" min="1900" max="2100" required>
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="duration">Duração (min)</label>
+                    <input id="duration" name="duration" type="number" min="1" required>
+                </div>
+                <div class="campo">
+                    <label for="rating">Classificação</label>
+                    <input id="rating" name="rating" type="number" min="0" max="18" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="category">Categoria</label>
+                <select id="category" name="category" required>
+                    <option value="em-cartaz">Em cartaz</option>
+                    <option value="classicos">Clássicos</option>
+                    <option value="futuro">Em breve</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="description">Descrição</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button class="primary-btn" type="submit">Salvar filme</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-names">
+            <span>Ronny</span>
+            <span>Rômulo</span>
+        </div>
+        <small>Todos os direitos reservados.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

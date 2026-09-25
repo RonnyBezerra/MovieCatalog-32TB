@@ -1,15 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Movies Catalog</title>
+    <title>Cine Hall</title>
 </head>
-<body>
-    <h1>Lista de Filmes - Ronny & Rômulo</h1>
+<body data-page="home">
+    <header class="topbar">
+        <a href="index.html" class="brand-link">
+            <div class="brand-block">
+                <div class="brand">Cine Hall</div>
+                <div class="brand-sub">R &amp; R</div>
+            </div>
+        </a>
+    </header>
 
-    <section class="filmes"></section>
+    <main class="page">
+        <section class="hero">
+            <div>
+                <p class="eyebrow">Sala 01</p>
+                <h1>Catalogo de filmes</h1>
+                <p class="hero-text">Descubra os destaques, as clássicas e as estreias de uma noite no cinema.</p>
+            </div>
+            <a class="primary-btn" href="cadastro.html">Cadastrar filme</a>
+        </section>
+
+        <section class="catalogo">
+            <div class="section-header">
+                <h2>Em cartaz</h2>
+                <span class="status">Sessão principal</span>
+            </div>
+            <div class="carrossel">
+                <button class="carrossel-btn prev" type="button" aria-label="Anterior">&#8249;</button>
+                <div class="carrossel-track" data-section="em-cartaz"></div>
+                <button class="carrossel-btn next" type="button" aria-label="Próximo">&#8250;</button>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <div class="section-header">
+                <h2>Clássicos</h2>
+                <span class="status">Lembranças do cinema</span>
+            </div>
+            <div class="carrossel">
+                <button class="carrossel-btn prev" type="button" aria-label="Anterior">&#8249;</button>
+                <div class="carrossel-track" data-section="classicos"></div>
+                <button class="carrossel-btn next" type="button" aria-label="Próximo">&#8250;</button>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <div class="section-header">
+                <h2>Em breve</h2>
+                <span class="status">Próximas estreias</span>
+            </div>
+            <div class="carrossel">
+                <button class="carrossel-btn prev" type="button" aria-label="Anterior">&#8249;</button>
+                <div class="carrossel-track" data-section="futuro"></div>
+                <button class="carrossel-btn next" type="button" aria-label="Próximo">&#8250;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-names">
+            <span>Ronny</span>
+            <span>Rômulo</span>
+        </div>
+        <small>Todos os direitos reservados.</small>
+    </footer>
 
     <script src="script.js"></script>
 </body>
