@@ -78,7 +78,7 @@ app.listen(3000, () => {
 
 const sql = mysql2.createPool({
     host: "benserverplex.ddns.net",
-    user: "alunos",
+    user: "alunos", 
     password: "senhaAlunos",
     database: "alunos_filmes03TB"
 })
